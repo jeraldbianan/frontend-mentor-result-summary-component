@@ -1,47 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Results summary component showing test scores with detailed breakdown by category including reaction, memory, verbal, and visual skills."
+    />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
 
-  Your Result
-  76
-  of 100
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+  <body>
+    <main class="container" aria-label="Results summary">
+      <section class="result" aria-labelledby="result-heading">
+        <h1 id="result-heading">Your Result</h1>
+        <div class="circle">
+          <p class="score">76</p>
+          <p class="total">of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p class="result-text">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
 
-  Reaction
-  80 / 100
+      <section class="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Summary</h2>
+        <div class="summary-items">
+          <div class="summary-item reaction">
+            <div class="item-label">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Reaction</span>
+            </div>
+            <p class="item-score"><strong>80</strong> / 100</p>
+          </div>
 
-  Memory
-  92 / 100
+          <div class="summary-item memory">
+            <div class="item-label">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Memory</span>
+            </div>
+            <p class="item-score"><strong>92</strong> / 100</p>
+          </div>
 
-  Verbal
-  61 / 100
+          <div class="summary-item verbal">
+            <div class="item-label">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Verbal</span>
+            </div>
+            <p class="item-score"><strong>61</strong> / 100</p>
+          </div>
 
-  Visual
-  72 / 100
+          <div class="summary-item visual">
+            <div class="item-label">
+              <img
+                src="./assets/images/icon-visual.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Visual</span>
+            </div>
+            <p class="item-score"><strong>73</strong> / 100</p>
+          </div>
+        </div>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <button class="continue-btn">Continue</button>
+      </section>
+    </main>
+
+    <footer aria-label="Site footer">
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          hreflang="en"
+          aria-label="Frontend Mentor website (opens in new tab)"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://jeraldbianan.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          hreflang="en"
+          aria-label="Jerald Bianan's website (opens in new tab)"
+          >Jerald Bianan</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
